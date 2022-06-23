@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Araç_Takip_Sistemi
 {
     public partial class AracListeleForm : Form
     {
+        #region Araç Listele Form
         public AracListeleForm()
         {
             InitializeComponent();
@@ -21,16 +23,18 @@ namespace Araç_Takip_Sistemi
         {
             Listele();
         }
-
+        #endregion
         #region DataBase Stuffs
         static string constring = "Data Source=DESKTOP-S8TSQQK;Initial Catalog=Cars;Integrated Security=True";
         SqlConnection con = new SqlConnection(constring);
         string sorguCumlesi = "Select * from KayitliArabalar";
+        #endregion
+        #region DataGridView
         private void Listele()
         {
             try
             {
-                if (con.State == ConnectionState.Open)
+                if (con.State == ConnectionState.Closed)
                     con.Open();
                 SqlCommand command = new SqlCommand(sorguCumlesi, con);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -48,10 +52,8 @@ namespace Araç_Takip_Sistemi
                 con.Close();
             }
         }
+
         #endregion
 
     }
-
-
-
 }

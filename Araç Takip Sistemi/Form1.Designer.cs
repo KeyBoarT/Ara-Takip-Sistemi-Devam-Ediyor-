@@ -50,9 +50,9 @@ namespace Araç_Takip_Sistemi
             this.araclarButton = new System.Windows.Forms.Button();
             this.mainMenuPictureBox = new System.Windows.Forms.Panel();
             this.resimEkleButton = new System.Windows.Forms.Button();
-            this.userPictureBox = new Araç_Takip_Sistemi.CircularPictureBox();
             this.mainMenuFillPanel = new System.Windows.Forms.Panel();
             this.resimOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.userPictureBox = new Araç_Takip_Sistemi.CircularPictureBox();
             this.mainMenuSidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.musterilerSubmenuPanel.SuspendLayout();
@@ -388,6 +388,20 @@ namespace Araç_Takip_Sistemi
             this.resimEkleButton.UseVisualStyleBackColor = false;
             this.resimEkleButton.Click += new System.EventHandler(this.resimEkleButton_Click);
             // 
+            // mainMenuFillPanel
+            // 
+            this.mainMenuFillPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainMenuFillPanel.Location = new System.Drawing.Point(200, 0);
+            this.mainMenuFillPanel.Name = "mainMenuFillPanel";
+            this.mainMenuFillPanel.Size = new System.Drawing.Size(944, 561);
+            this.mainMenuFillPanel.TabIndex = 2;
+            // 
+            // resimOpenFileDialog
+            // 
+            this.resimOpenFileDialog.Filter = "Jpeg Dosyaları (*.jpeg)|*.jpeg| Jpg Dosyaları(*.jpg)|*.jpg| Png Dosyaları(*.png)|" +
+    "*.png";
+            this.resimOpenFileDialog.Title = "Resim Seç";
+            // 
             // userPictureBox
             // 
             this.userPictureBox.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -402,26 +416,12 @@ namespace Araç_Takip_Sistemi
             this.userPictureBox.TabIndex = 1;
             this.userPictureBox.TabStop = false;
             // 
-            // mainMenuFillPanel
-            // 
-            this.mainMenuFillPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainMenuFillPanel.Location = new System.Drawing.Point(200, 0);
-            this.mainMenuFillPanel.Name = "mainMenuFillPanel";
-            this.mainMenuFillPanel.Size = new System.Drawing.Size(844, 561);
-            this.mainMenuFillPanel.TabIndex = 2;
-            // 
-            // resimOpenFileDialog
-            // 
-            this.resimOpenFileDialog.Filter = "Jpeg Dosyaları (*.jpeg)|*.jpeg| Jpg Dosyaları(*.jpg)|*.jpg| Png Dosyaları(*.png)|" +
-    "*.png";
-            this.resimOpenFileDialog.Title = "Resim Seç";
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(69)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1044, 561);
+            this.ClientSize = new System.Drawing.Size(1144, 561);
             this.Controls.Add(this.mainMenuFillPanel);
             this.Controls.Add(this.mainMenuSidePanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
