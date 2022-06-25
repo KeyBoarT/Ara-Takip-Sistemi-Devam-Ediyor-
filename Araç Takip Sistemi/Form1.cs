@@ -167,11 +167,13 @@ namespace Araç_Takip_Sistemi
         private void aracSilButton_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new AracSilForm());
         }
 
         private void aracGuncelle_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new AracGuncelleForm());
         }
         #endregion
 

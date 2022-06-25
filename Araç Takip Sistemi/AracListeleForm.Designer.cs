@@ -32,11 +32,6 @@ namespace Araç_Takip_Sistemi
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.aracListeleTopPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.aramaButton = new System.Windows.Forms.Button();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.aracListeleFillPanel = new System.Windows.Forms.Panel();
             this.aracListeleDataGridView = new Araç_Takip_Sistemi.ModernDataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,68 +43,18 @@ namespace Araç_Takip_Sistemi
             this.yakit_tipi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.durum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.resim = new System.Windows.Forms.DataGridViewImageColumn();
-            this.aracListeleTopPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.aracListeleFillPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aracListeleDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // aracListeleTopPanel
-            // 
-            this.aracListeleTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(175)))));
-            this.aracListeleTopPanel.Controls.Add(this.panel1);
-            this.aracListeleTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.aracListeleTopPanel.Location = new System.Drawing.Point(0, 0);
-            this.aracListeleTopPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.aracListeleTopPanel.Name = "aracListeleTopPanel";
-            this.aracListeleTopPanel.Size = new System.Drawing.Size(944, 90);
-            this.aracListeleTopPanel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.aramaButton);
-            this.panel1.Controls.Add(this.idLabel);
-            this.panel1.Controls.Add(this.idTextBox);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(695, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 90);
-            this.panel1.TabIndex = 3;
-            // 
-            // aramaButton
-            // 
-            this.aramaButton.Location = new System.Drawing.Point(127, 44);
-            this.aramaButton.Name = "aramaButton";
-            this.aramaButton.Size = new System.Drawing.Size(111, 39);
-            this.aramaButton.TabIndex = 1;
-            this.aramaButton.Text = "Ara";
-            this.aramaButton.UseVisualStyleBackColor = true;
-            // 
-            // idLabel
-            // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.ForeColor = System.Drawing.Color.White;
-            this.idLabel.Location = new System.Drawing.Point(3, 15);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(26, 20);
-            this.idLabel.TabIndex = 0;
-            this.idLabel.Text = "ID";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.Location = new System.Drawing.Point(35, 12);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(203, 26);
-            this.idTextBox.TabIndex = 0;
             // 
             // aracListeleFillPanel
             // 
             this.aracListeleFillPanel.Controls.Add(this.aracListeleDataGridView);
             this.aracListeleFillPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aracListeleFillPanel.Location = new System.Drawing.Point(0, 90);
+            this.aracListeleFillPanel.Location = new System.Drawing.Point(0, 0);
             this.aracListeleFillPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.aracListeleFillPanel.Name = "aracListeleFillPanel";
-            this.aracListeleFillPanel.Size = new System.Drawing.Size(944, 471);
+            this.aracListeleFillPanel.Size = new System.Drawing.Size(944, 561);
             this.aracListeleFillPanel.TabIndex = 1;
             // 
             // aracListeleDataGridView
@@ -161,7 +106,7 @@ namespace Araç_Takip_Sistemi
             this.aracListeleDataGridView.RowHeadersVisible = false;
             this.aracListeleDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.aracListeleDataGridView.RowTemplate.Height = 100;
-            this.aracListeleDataGridView.Size = new System.Drawing.Size(944, 471);
+            this.aracListeleDataGridView.Size = new System.Drawing.Size(944, 561);
             this.aracListeleDataGridView.TabIndex = 0;
             // 
             // ID
@@ -243,16 +188,12 @@ namespace Araç_Takip_Sistemi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 561);
             this.Controls.Add(this.aracListeleFillPanel);
-            this.Controls.Add(this.aracListeleTopPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AracListeleForm";
             this.Text = "AracListeleForm";
             this.Load += new System.EventHandler(this.AracListeleForm_Load);
-            this.aracListeleTopPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.aracListeleFillPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.aracListeleDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -260,14 +201,8 @@ namespace Araç_Takip_Sistemi
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel aracListeleTopPanel;
         private System.Windows.Forms.Panel aracListeleFillPanel;
         private ModernDataGridView aracListeleDataGridView;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button aramaButton;
-        private System.Windows.Forms.Label idLabel;
-        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn tur;
         private System.Windows.Forms.DataGridViewTextBoxColumn marka;

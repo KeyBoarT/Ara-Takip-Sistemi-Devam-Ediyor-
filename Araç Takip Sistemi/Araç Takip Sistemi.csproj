@@ -52,11 +52,23 @@
     <Compile Include="AracEkleForm.Designer.cs">
       <DependentUpon>AracEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AracGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracGuncelleForm.Designer.cs">
+      <DependentUpon>AracGuncelleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AracListeleForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AracListeleForm.Designer.cs">
       <DependentUpon>AracListeleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracSilForm.Designer.cs">
+      <DependentUpon>AracSilForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CarsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -91,8 +103,14 @@
     <EmbeddedResource Include="AracEkleForm.resx">
       <DependentUpon>AracEkleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AracGuncelleForm.resx">
+      <DependentUpon>AracGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AracListeleForm.resx">
       <DependentUpon>AracListeleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracSilForm.resx">
+      <DependentUpon>AracSilForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
